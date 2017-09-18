@@ -1,4 +1,4 @@
-package org.teachingkidsprogramming.section02methods;
+package org.teachingkidsprogramming.section02methods.Variations;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
