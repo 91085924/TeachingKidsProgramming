@@ -9,16 +9,11 @@ public class FourSquare
   {
     Tortoise.show();
     Tortoise.setSpeed(10);
-    //  Do the following 4 times --#8.1
     for (int j = 0; j < 4; j++)
     {
-      //      drawSquare (recipe below) --#6.1
-      //      ------------- Recipe for drawSquare --#6.2
       for (int i = 0; i < 4; i++)
         drawSquare();
-      //      ------------- End of drawSquare recipe --#6.3
-      //      Turn the tortoise 90 degrees to the right --#9
-      //  End Repeat --#8.2
+      Tortoise.turn(90);
     }
   }
   private static void drawSquare()
