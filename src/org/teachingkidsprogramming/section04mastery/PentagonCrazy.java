@@ -27,21 +27,19 @@ public class PentagonCrazy
   private static void adjustPen()
   {
     Tortoise.setPenColor(ColorWheel.getNextColor());
-    //        Increase the tortoises pen width by 1 --#15
-    Tortoise.setPenWidth(+1);
+    Tortoise.setPenWidth(Tortoise.getPenWidth() + 1);
     //        If the tortoise's pen width is greater than 4, then --#17
-    //if (penwidth > 4)
-    //{
-    //}
-    //            Reset the pen width to 1 --#16
-    Tortoise.setPenWidth(1);
+    if (Tortoise.getPenWidth() > 4)
+    {
+      Tortoise.setPenWidth(1);
+    }
   }
   private static void createColorPalette()
   {
     ColorWheel.addColor(PenColors.Blues.SteelBlue);
     ColorWheel.addColor(PenColors.Purples.DarkOrchid);
     ColorWheel.addColor(PenColors.Blues.DarkSlateBlue);
-    ColorWheel.addColor(PenColors.Greens.Teal);
+    ColorWheel.addColor(PenColors.Blues.Teal);
     ColorWheel.addColor(PenColors.Purples.Indigo);
   }
 }
