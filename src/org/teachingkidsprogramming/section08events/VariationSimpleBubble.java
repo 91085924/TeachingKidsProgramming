@@ -8,10 +8,10 @@ import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MouseLeftClickListener;
 import org.teachingextensions.logo.utils.LineAndShapeUtils.Circle;
 
-public class SimpleBubble implements MouseLeftClickListener
+public class VariationSimpleBubble implements MouseLeftClickListener
 {
   ProgramWindow programWindow; //this is a class level variable(member variable)
-  public SimpleBubble()
+  public VariationSimpleBubble()
   {
     programWindow = new ProgramWindow("My Bubble");
     programWindow.setWindowVisible(true);
@@ -21,10 +21,10 @@ public class SimpleBubble implements MouseLeftClickListener
   }
   private void prepareColorPalette()
   {
-    ColorWheel.addColor(PenColors.Purples.Purple);
-    ColorWheel.addColor(PenColors.Blues.LightBlue);
+    ColorWheel.addColor(PenColors.Reds.Red);
+    ColorWheel.addColor(PenColors.Browns.Chocolate);
     ColorWheel.addColor(PenColors.Blues.Blue);
-    ColorWheel.addColor(PenColors.Blues.DarkBlue);
+    ColorWheel.addColor(PenColors.Greens.YellowGreen);
   }
   @Override
   public void onLeftMouseClick(int x, int y)
